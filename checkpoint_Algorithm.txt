@@ -1,0 +1,25 @@
+Algorithm alg_sentence
+var:
+	i=0,nbrCaracters=0,nbrWords=0,nbrVowels=0 : INTEGER;
+	sentence : string;
+Start
+	Read(sentence);
+	while(sentence !=0) do 
+		nbrCaracters=nbrCaracters+1;
+		switch(sentence[i] != ".") do 
+			case " ": nbrWords=nbrWords+1;break;
+			case "a": nbrVowels=nbrVowels+1;break;
+			case "e": nbrVowels=nbrVowels+1;break;
+			case "i": nbrVowels=nbrVowels+1;break;
+			case "o": nbrVowels=nbrVowels+1;break;		
+			case "u": nbrVowels=nbrVowels+1;break;
+			case "w": nbrVowels=nbrVowels+1;break;
+			case "y": nbrVowels=nbrVowels+1;break;
+			default:
+		end-switch
+	end-while
+	write("number of caracters is "+nbrCaracters+1);
+	write("number of words is "+nbrWords);
+	write("number of vowels "+nbrVowels);
+End
+	
